@@ -1,2 +1,15 @@
+<div class= "jumbotron center">
+
+<center>
 <h1>Welcome to Amigo</h1>
-<p><%= link_to "Sign In", "#" %> with Facebook below</p>
+
+<% if user_signed_in? %>
+	puts whats up
+<% else %>
+
+	<%= link_to "Sign In", new_user_session_path, class: "btn btn-default" %>
+	<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger" %>
+</center>
+<% end %>
+</div>
+
