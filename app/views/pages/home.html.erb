@@ -1,15 +1,16 @@
 <div class= "jumbotron center">
 
-<center>
-<h1>Welcome to Amigo</h1>
+	<center>
+		<h1>Welcome to Amigo</h1>
 
-<% if user_signed_in? %>
-	puts whats up
-<% else %>
+		<% if user_signed_in? %>
+			puts whats up
+		<% else %>
 
-	<%= link_to "Sign In", new_user_session_path, class: "btn btn-default" %>
-	<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger" %>
-</center>
-<% end %>
+			<%= link_to "Sign In", new_user_session_path, class: "btn btn-default" %>
+			<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger" %>
+		
+	</center>
+	<% end %>
 </div>
 
