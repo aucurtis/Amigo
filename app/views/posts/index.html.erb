@@ -4,7 +4,8 @@
 
 
     <% @posts.each do |post| %>
-        <%= post.postDesc %>
+        <p><%= post.postDesc %></p>
+        <p><strong><%= post.user.name %></strong></p>
         <%= link_to 'Show', post %>
         <% if post.user == current_user %>
 	        <%= link_to 'Edit', edit_post_path(post) %>

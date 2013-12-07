@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.postDesc %>
-</p>
+ <p> <strong>Description:</strong></p>
+  <p><%= @post.postDesc %></p>
+  <p><%= @post.user.name %></p>
 
 <% if @post.user == current_user %>
 <%= link_to 'Edit', edit_post_path(@post) %> |
